@@ -71,15 +71,15 @@ $navigation = $isAdmin
 
             <span class="menu-heading">KEUANGAN</span>
 
-            <a href="budget.php" class="menu-item">
+            <a href="budget.php" class="menu-item <?= ($pageTitle ?? '') === 'Anggaran' ? 'active' : '' ?>">
                 <span>▤</span> Anggaran
             </a>
 
-            <a href="tabungan.php" class="menu-item">
+            <a href="tabungan.php" class="menu-item <?= ($pageTitle ?? '') === 'Tabungan' ? 'active' : '' ?>">
                 <span>◎</span> Tabungan
             </a>
 
-            <a href="laporan.php" class="menu-item">
+            <a href="laporan.php" class="menu-item <?= ($pageTitle ?? '') === 'Laporan' ? 'active' : '' ?>">
                 <span>▥</span> Laporan
             </a>
 
